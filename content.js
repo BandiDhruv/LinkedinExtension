@@ -13,8 +13,7 @@ function replaceProfilePics() {
   ];
 
   dynamiClassNames.forEach(c => {
-    const classNameForThatProfileToChange = document.getElementsByClassName(`ivm-view-attr__img--centered`);
-    console.log(classNameForThatProfileToChange);  
+    const classNameForThatProfileToChange = document.getElementsByClassName(`ivm-view-attr__img--centered ${c}`);
     Array.from(classNameForThatProfileToChange).forEach(e => {
       e.src = luffyImage;
     });
