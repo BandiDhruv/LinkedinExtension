@@ -4,15 +4,13 @@
     "version": "1.0",
     "description": "Changes profile pictures on the LinkedIn homepage to a specified image.",
     "icons": {
-      "48": "icon.png"
+      "48": "icon.jpeg"
     },
     "permissions": [
+      "*://*.linkedin.com/*",
       "activeTab",
       "scripting"
     ],
-    "background": {
-      "service_worker": "background.js"
-    },
     "content_scripts": [
       {
         "matches": ["*://www.linkedin.com/feed/*"],
