@@ -11,9 +11,10 @@ function replaceProfilePics() {
     'EntityPhoto-square-1',
     'EntityPhoto-square-2',
   ];
+  
 
   dynamiClassNames.forEach(c => {
-    const classNameForThatProfileToChange = document.getElementsByClassName(`ivm-view-attr__img--centered ${c}`);
+    const classNameForThatProfileToChange = document.getElementsByClassName(`ivm-view-attr__img--centered ${c}  update-components-actor__avatar-image`);
     Array.from(classNameForThatProfileToChange).forEach(e => {
       e.src = luffyImage;
     });
